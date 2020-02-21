@@ -1,5 +1,12 @@
 package controller;
 
+/**
+ * Classe criada para armazer as informações registradas e colocar em um arquivo txt
+ * 
+ * @author eknascimento
+ */
+
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -14,6 +21,7 @@ import javax.swing.JOptionPane;
 
 import model.Aluno;
 import model.Data;
+import model.Endereco;
 
 public class AlunoController {
 //	texto = leitor.readLine();
@@ -22,10 +30,12 @@ public class AlunoController {
 //	dados[0] = matricula;
 //	dados[0] = matricula;
 	
-	public void inserirAluno(String matricula, String nome, Data data, char genero, String rg, String cpf) {
+	public void inserirAluno(String matricula, String nome, String rg, String cpf, Data dataNascimento, String resposta,
+			String telefone, String cep, String numero, String complemento,String bairro, String logradouro, String cidade, 
+			String estado, String senha) {
 		
 		Data data1 = new Data();
-		Aluno aluno1 = new Aluno(matricula, nome, data, genero,rg,cpf, null, cpf, cpf);
+		Aluno aluno1 = new Aluno(matricula, nome, dataNascimento, resposta, rg, cpf, endereco, telefone, senha);
 		
 		try {
 			File arquivo = new File("aluno.txt");

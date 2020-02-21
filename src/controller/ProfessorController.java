@@ -1,5 +1,11 @@
 package controller;
 
+/**
+ * Classe criada para armazer as informações registradas e colocar em um arquivo txt
+ * 
+ * @author eknascimento
+ */
+
 import model.Professor;
 
 public class ProfessorController {

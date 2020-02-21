@@ -1,6 +1,13 @@
-import controller.AlunoController;
+//import controller.AlunoController;
 //import controller.ProfessorController;
-import model.AlunoView;
+import view.AlunoView;
+
+/**
+ * Classe criada para inicializar as classes
+ * 
+ * @author eknascimento
+ */
+
 
 public class Main {
 
@@ -8,7 +15,7 @@ public class Main {
 //		ProfessorController apresentaProfessor = new ProfessorController();
 //		apresentaProfessor.testaProfessor();
 		
-		AlunoController apresentaAluno = new AlunoController();
+//		AlunoController apresentaAluno = new AlunoController();
 		new AlunoView();
 		
 //		apresentaAluno.inserirAluno();

@@ -1,5 +1,11 @@
 package model;
 
+/**
+ * Classe criada para dizer quais informações as outras classes devem pegar
+ * 
+ * @author eknascimento
+ */
+
 public class Professor extends Funcionario{
 	private String materia;
 	
